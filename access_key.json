@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "myfirstapp-72240",
+  "private_key_id": "81488f729eea86f7f76b257ee9302cc6ddd47455",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0ajrEnh40b2Kb\n4hUX28EQEUIY5ma1ceW8thSFel6JsnFsvYa6gm0ebnkrGFI4kjBl3ZKuVdnqDJvn\nhOzxXJKLb6T+py2eTg4wcZotwdezuEt539EQpq0aR8FqFvLHBBWLUDr2BpY8oaB2\nVbDwuifjpPrNY5Swx4q1XCQoUwONzR7POSZYvbJaHA5Xb7BnNnLLY1LJehP0HQEq\na59FhKrgvJC9Dd9dxwdiF3zm+GBoNoSA2Ej484y8WjCV4cMlNdgL8ZsFmQenJfeR\noaDdIJxCt413SDYRPjew9Up6u85eYcst1C6brT0jWHn/fYKI3K/SkZigfSebEXPz\n+ESPXdzRAgMBAAECggEAFj6zYo8W7RLvSwZmIKgWPs2L829EKnrhz2H5d4hCLBL6\nGITpXemLPAl1y/YenC5NRKAcb/2ypeC6X+JkRzHJeWMRilsRXT+lUPyO3LW2C4kt\nmDg8KkQM26zNiK/N7TNAF0p0DKX9A/qPQwv3ikT/ulo7GNQ+jwn5fLlg1W5/5Y23\na6EQoSg8vMn38e2YNHtNHqdwmB5FQ4nFgMfdHqxpOxCteJRkmbN95Akpm0c6Y1oR\n3W4dniXj7Qvv2EGKm7xgCCa82Hr4EQYwSeRoXumy7K7120dwlxiiiQ8wjk43CqlF\nnS1bMlXYQPuJOfRLIRn2ch0Z5hUR75TUbDdZmwS6CQKBgQD+roRCk986MZdgHZQZ\ntC3WVdiIs5lmXlntL+qF/Bt3NByUfz0WVUPvHeb+eW0dkPX31Ugcdn5pEUMKclGC\njsrhxCISWKa9Asg1pFuNK6djNSBTm+6cnrfijQIB1BAgFBAx0NYp0WnZXfRACQ7Q\n/s+kHo2xsQbj+NyHVgtd4Yk+GQKBgQC1WUz7DBx93i5NuM4bt2K1OhpwEBefxDJp\nI3vKnEhjO1Zs7fb0cNZ1rheo2q5u7QzAqIGwt32nty5TrYROFzJN8bW0zs2cmrAH\nxbjZC8oBhD0Y2IpzhTulI9USlIRUjfybWU9xMQSx2YX5wQiu03LEXRwN5ZkvBkQN\nPBUuTCX7eQKBgFbakURbRY+FBgjDTZSOe+tSj2vfQ/tDRgu7gZF77qnyXaTO17hc\nD7TmT7aNFoc0vo1scREz39xZBLH1VpLdu5bO2ofDL+nZnwmcKZS1RHpyzbl1viQv\nhKqASCTzeyRVc0hp3f+Y6S41+mw0KpdfrtRbjxsAMkdgwWRuFaZImhNRAoGAOul5\nsoxqrRECZclFW4elj04CzKjNo98uqS0Xx+ghM+tQ1i4v7ZTCdpRJp1bzF6H2ZJfZ\nGbliHpvJdvGFa4DpnJyK9OPBs8Aks0GuHQRRaVC2MF4YDBMaHzmWvGR24KkHiMfo\noNLVvZj2hv4IfhK+07+Tn4gYzUfxz4LXNqUSKbECgYB4uaGTBhcdXztGBYDlwh+4\nBxylUoXskJIESeSXgxwSfUjz6Yf5rxjK1DygE2Ugb4yT/tqxZfdPjAcXzzSaN+IG\n1DA4wWoDKwQ2RDRwwrbDn5nNdKvzLzPPNNQ6SoOyW1x5FamZK2hjNhF7Act18I0p\nGCJjPgwRVMP5LrJlnwDeuQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gcloud-bucket-access@myfirstapp-72240.iam.gserviceaccount.com",
+  "client_id": "106896884246838629844",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gcloud-bucket-access%40myfirstapp-72240.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
