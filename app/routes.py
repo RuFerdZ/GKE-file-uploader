@@ -63,7 +63,7 @@ def upload_image():
     file = request.files.get('files')
     if not file:
         return jsonify({'error': 'A File is required'}), 400,
-    tmp_file = f'files/{file.filename}'
+    tmp_file = f'./files/{file.filename}'
     file.save(tmp_file)
     url = gcs_upload_image(tmp_file)
     # os.remove(tmp_file)
