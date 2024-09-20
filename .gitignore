@@ -1,5 +1,6 @@
 # created by virtualenv automatically
 venv/Lib
 
-./access_key.json
+access_key.json
+
 files
