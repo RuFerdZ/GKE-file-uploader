@@ -15,4 +15,4 @@ CMD [ "python", "main.py" ]
 
 
 
-# docker run --name file-uploader-app --rm -d -p 5000:5000 -e GOOGLE_APPLICATION_CREDENTIALS="access_key.json" file-uploader
+# To run use -> docker run --name file-uploader-app --rm -d -p 5000:5000 -e GOOGLE_APPLICATION_CREDENTIALS="access_key.json" file-uploader
