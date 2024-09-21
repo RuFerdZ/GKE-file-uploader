@@ -1,32 +1,15 @@
-from app import app
-from flask import Flask, jsonify, request
-from werkzeug.utils import secure_filename
-from flask_cors import CORS
+from flask import jsonify, request
 from google.cloud import storage
-from io import BytesIO
 
-import os
+from app import app
 
-ALLOWED_EXTENSIONS = set(['xls', 'csv', 'png', 'jpeg', 'jpg', 'pdf'])
-UPLOAD_FOLDER = "files"
-
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 500 * 1000 * 1000  # 500 MB
-app.config['CORS_HEADER'] = 'application/json'
-
-
-def allowedFile(filename):
-    return '.' in filename and \
-        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+BUCKET_NAME = "gke-file-upload"
 
 
 @app.route('/')
 @app.route('/index')
 def index():
     return "Hello, World!"
-
-
-BUCKET_NAME = "gke-file-upload"
 
 
 @app.route('/upload', methods=['POST'])
@@ -40,3 +23,4 @@ def upload_blob_from_memory():
         blob.upload_from_file(file)
         return jsonify({'url': blob.public_url})
     return jsonify({'error': 'A File is required'}), 400
+
