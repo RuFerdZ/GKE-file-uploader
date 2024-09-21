@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: file-uploader-app
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: file-uploader-app
+  template:
+    metadata:
+      labels:
+        app: file-uploader-app
+    spec:
+      containers:
+        - name: file-uploader-app
+          image: gcr.io/myfirstapp-72240/file-uploader:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/app/access_key.json"
+          volumeMounts:
+            - name: gcs-service-account-volume
+              mountPath: /app/access_key.json
+              subPath: access_key.json
+      volumes:
+        - name: gcs-service-account-volume
+          secret:
+            secretName: gcs-service-account
+      imagePullSecrets:
+        - name: gcr-json-key
