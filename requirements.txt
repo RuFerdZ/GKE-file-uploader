@@ -2,3 +2,5 @@ flask
 Werkzeug
 flask_cors
 google-cloud-storage
+psycopg2-binary
+Flask-SQLAlchemy
