@@ -20,14 +20,6 @@ spec:
             - containerPort: 5000
           env:
             - name: GOOGLE_APPLICATION_CREDENTIALS
-              value: "/app/access_key.json"
-          volumeMounts:
-            - name: gcs-service-account-volume
-              mountPath: /app/access_key.json
-              subPath: access_key.json
-      volumes:
-        - name: gcs-service-account-volume
-          secret:
-            secretName: gcs-service-account
+              value: "access_key.json"
       imagePullSecrets:
         - name: gcr-json-key
