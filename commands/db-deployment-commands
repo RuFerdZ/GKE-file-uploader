@@ -1,0 +1,23 @@
+gcloud container clusters create my-app-cluster --zone us-central1-a --num-nodes 3
+
+gcloud container clusters list
+
+gcloud container clusters get-credentials my-app-cluster --zone us-central1-a
+
+gcloud auth configure-docker
+
+docker build -t gcr.io/myfirstapp-72240/python-app:latest .
+
+docker push gcr.io/myfirstapp-72240/python-app:latest
+
+kubectl create secret generic db-credentials --from-literal=DB_HOST=34.16.119.255 --from-literal=DB_NAME=myappdb --from-literal=DB_USER=myuser --from-literal=DB_PASSWORD=mypassword
+
+kubectl create secret docker-registry gcr-json-key --docker-server=gcr.io --docker-username=_json_key --docker-password="$(cat access_key.json)" --docker-email=rusiruhfdo@gmail.com
+
+kubectl create deployment python-app-deployment --image=gcr.io/myfirstapp-72240/python-app:latest
+
+kubectl expose deployment python-app-deployment --type LoadBalancer --port 80 --target-port 5000
+	
+kubectl get pods
+
+kubectl get service python-app
