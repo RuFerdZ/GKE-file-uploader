@@ -11,7 +11,7 @@ secret_key = secrets.token_hex(16)  # 32 characters (16 bytes)
 DB_NAME = os.environ.get('DB_NAME', 'myappdb')
 USER = os.environ.get('DB_USER', 'myuser')
 PASSWORD = os.environ.get('DB_PASSWORD', 'mypassword')
-HOST = os.environ.get('DB_HOST', '34.16.119.255')
+HOST = os.environ.get('DB_HOST', 'localhost')
 PORT = '5432'
 
 print(f'postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}')
