@@ -16,6 +16,8 @@ kubectl create secret docker-registry gcr-json-key --docker-server=gcr.io --dock
 
 kubectl create deployment python-app-deployment --image=gcr.io/myfirstapp-72240/python-app:latest
 
+kubectl apply -f db-deployment.yaml
+
 kubectl expose deployment python-app-deployment --type LoadBalancer --port 80 --target-port 5000
 	
 kubectl get pods
